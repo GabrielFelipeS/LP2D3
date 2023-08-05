@@ -1,26 +1,19 @@
 <?php
 
-class Pessoa() {
+class Pessoa {
     private $nome;
     private $idade;
     private $profissao; 
 
-    function __construct() {
+    function __construct($nome, $idade, $profissao) {
         $this->nome = $nome;
         $this->idade = $idade;
         $this->profissao = $profissao;
     }
 
-    function get_nome() {
-
+    function apresentar() {
+        echo "Olá, meu nome é ".$this->nome.", tenho ".$this->idade." anos e sou ".$this->profissao.".";
     }
-
-    function get_idade() {
-        
-    }
-
-    function get_profissao() {
-        return $this->profissao;
-    }
+    
 
 }
