@@ -1,6 +1,7 @@
 <?php
 require("Carro.php");
 require("Retangulo.php");
+require("Pessoa.php")
 
 echo "Exercicio 1: <br>";
 // Instanciando carro
@@ -20,7 +21,7 @@ echo "<br><br>";
 echo "Exercicio 2: <br>";
 
 $retangulo = new Retangulo(25, 4);
-echo "Área do retangulo de largura ".$retangulo->get_largura()." e altura ".$retangulo->get_altura()." é igual a ".$retangulo->perimetro()."<br>";
+echo "Área do retangulo de largura ".$retangulo->get_largura()." e altura ".$retangulo->get_altura()." é igual a ".$retangulo->area()."<br>";
 echo "Perametro do retangulo de largura ".$retangulo->get_largura()." e altura ".$retangulo->get_altura()." é igual a ".$retangulo->perimetro();
 
 

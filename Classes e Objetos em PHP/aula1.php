@@ -65,7 +65,7 @@
       }
       
       try {
-        echo divide(5, 1);
+        echo divide(25, 1);
       } catch(Exception $e) {
         echo "Unable to divide. ";
       } finally {
