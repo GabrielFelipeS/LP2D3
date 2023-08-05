@@ -20,7 +20,8 @@ echo "<br><br>";
 echo "Exercicio 2: <br>";
 
 $retangulo = new Retangulo(25, 4);
-echo "Parametro do retangulo de largura ".$retangulo->get_largura()." e altura ".$retangulo->get_altura()." é igual a ".$retangulo->perimetro();
+echo "Área do retangulo de largura ".$retangulo->get_largura()." e altura ".$retangulo->get_altura()." é igual a ".$retangulo->perimetro()."<br>";
+echo "Perametro do retangulo de largura ".$retangulo->get_largura()." e altura ".$retangulo->get_altura()." é igual a ".$retangulo->perimetro();
 
 
 echo "<br><br>";

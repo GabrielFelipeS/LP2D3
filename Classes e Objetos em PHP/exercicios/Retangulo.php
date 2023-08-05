@@ -10,8 +10,13 @@
         }
 
         function perimetro() {
+            return $this->largura + $this->altura + $this->largura + $this->altura;
+        }
+
+        function area() {
             return $this->largura * $this->altura;
         }
+
 
         function get_altura() {
             return $this->altura;
