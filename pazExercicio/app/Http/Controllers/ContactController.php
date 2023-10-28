@@ -9,11 +9,11 @@ use Illuminate\Support\Facades\Session;
 class ContactController extends Controller
 {
     public function contact() {
-        //$formulario = old('dadosFormulario');
         $formulario = Session::get('dadosFormulario');
 
         if($formulario) {
             Session::forget('dadosFormulario');
+
             return view('contact', [
                 'formulario' => false,
                 'nome' => $formulario['nome'],
