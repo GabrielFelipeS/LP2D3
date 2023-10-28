@@ -39,14 +39,16 @@ Route::get('/paz', function () {
     $nome = "Gabriel";
     $data = date('d/m/Y');
     $array = [ "paz no Oriente Médio", "A paz é a única forma de nos sentirmos realmente humanos", "Não existe uma caminho para a paz. A paz é o caminho"];
-    $i = rand() % count($array);
+
     $isUserLoggedln = true;
+    
+    $mensagemRandom = $array[array_rand($array)];
 
     return view('paz', 
     [
         "nome" => $nome,
         "data" => $data,
-        "mensagem" => $array[$i],
+        "mensagem" => $mensagemRandom,
         "UserLogado" => $isUserLoggedln
     ]);
 });
